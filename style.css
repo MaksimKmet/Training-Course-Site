@@ -181,6 +181,18 @@ h3 {
   .row {
     flex-direction: column;
   }
+  .course {
+    padding-top: 50px;
+  }
+  .course h1 {
+    font-size: 32px;
+  }
+  .course p {
+    margin-bottom: 30px;
+  }
+  .course-col {
+    margin-bottom: 30px;
+  }
 }
 
 /*-----   campus   ----- */
@@ -233,6 +245,15 @@ h3 {
 .layer:hover h3 {
   bottom: 49%;
   opacity: 1;
+}
+
+@media (max-width: 700) {
+  .campus h1 {
+    font-size: 32px;
+  }
+  .campus p {
+    margin-bottom: 20px;
+  }
 }
 
 /*---------Facilities----------*/
@@ -453,7 +474,7 @@ h3 {
 .about_hero-btn:hover {
   border: 1px solid #f44336;
   background: #f44336;
-  color: #fff2f1;
+  color: #fff;
 }
 
 .about_primary-block img {
@@ -499,54 +520,97 @@ h3 {
   margin-top: -70px;
 }
 
+@media (max-width: 700px) {
+  .footer-page {
+    margin-top: 10px;
+  }
+}
+
 /*------------------------Blog_Page----------------------------*/
+
+/*--------About-Header---------*/
 
 /*--------Blog-Primary--------*/
 
-.blog-primary {
+.blog-content {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: 10% auto 2% auto;
   text-align: left;
 }
-.blog-img {
-  width: 70%;
+
+/*--------Blog-Left--------*/
+
+.blog-left {
+  flex-basis: 65%;
+}
+
+.blog-left img {
+  width: 100%;
   margin: 0 2% 0 0;
 }
 
-.wrap {
-  display: flex;
-}
-
-.Post_categories-desc-header {
-  text-align: center;
-  background-color: #f44336;
-  color: #fff;
-}
-
-.Post_categories-desc-header_cont {
-  display: flex;
-}
-
-.cont-2 {
-  margin-left: 120px;
-}
-
-.Post_categories-desc p {
-  font-weight: 500;
-}
-
-/*---------Blog Secondary------------ */
-
-.blog-secondary {
-  width: 80%;
-  margin: auto;
-  text-align: left;
-}
-
-.blog-secondary h3 {
+.blog-left h3 {
   text-align: left;
   padding: 10px 0;
 }
-.blog-secondary p {
-  padding: 10px 0 15px 0;
+
+.blog-left p {
+  padding-left: 0;
+}
+.comment-box {
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+
+.comment-form button {
+  margin: 10px 0;
+  background-color: white;
+}
+
+/*--------Blog-Right--------*/
+
+.blog-right {
+  flex-basis: 32%;
+  box-sizing: border-box;
+}
+
+.blog-right_title {
+  text-align: center;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 16px;
+}
+
+.blog-right p {
+  font-weight: 500;
+}
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+@media (max-width: 700px) {
+  .blog_header h1 {
+    padding-top: 8%;
+    font-size: 34px;
+  }
+  .blog-content {
+    display: block;
+  }
 }
