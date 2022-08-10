@@ -107,7 +107,7 @@ nav .fa {
     display: block;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     background: #f44336;
     height: 100vh;
     width: 200px;
@@ -293,7 +293,7 @@ h3 {
 }
 
 .testimonials-col {
-  flex-basis: 40%;
+  flex-basis: 43%;
   background-color: #fff2f1;
   padding: 25px;
   border-radius: 10px;
@@ -319,7 +319,7 @@ h3 {
   }
 
   .testimonials-col img {
-    margin-top: 70px;
+    margin-top: 50%;
   }
 }
 
@@ -614,3 +614,98 @@ h3 {
     display: block;
   }
 }
+
+/*------------------------Blog_Page----------------------------*/
+
+/*--------Map--------*/
+
+.map {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  margin: auto;
+  
+}
+.map-mobile_version {
+  display: none;
+}
+
+/*----Contact-Block----*/
+
+.wrap {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+/*-----Left-side-----*/
+
+.left-side {
+  padding-top: 10%;
+  padding-right: 10%;
+  
+}
+.ico {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.ico .fa{
+  position: relative;
+  top: 10px;
+  color: #f44336;
+}
+
+.ico-desc {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.ico-desc h4 {
+  font-weight: 500;
+}
+
+.ico-desc p {
+  font-size: 12px ;
+  padding: 5px 0;
+}
+
+.right-side {
+  padding-top: 10%;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(226, 211, 211);
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+}
+
+.contact-hero-btn {
+  background-color: white;
+}
+
+@media (max-width:700px) {
+  .map {
+    display: none;
+  }
+  .map-mobile_version {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  margin: auto;
+  }
+  
+  .wrap {
+    display: block;
+  }
+}
+
+
